@@ -16,6 +16,11 @@ class Classroom
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
+    public function getIdd(): ?int
+    {
+        return $this->idd;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
